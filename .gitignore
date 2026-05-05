@@ -416,7 +416,10 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+<<<<<<< HEAD
 
 node_modules/
 .env
 .vscode/
+=======
+>>>>>>> 18a5ebb6c24165b892642a7205fb006bf99deef5

@@ -8,8 +8,12 @@ const userSchema = new Schema({
     },
     email: {
         type: String,
+<<<<<<< HEAD
         required: true,
         unique: true
+=======
+        required: true
+>>>>>>> 18a5ebb6c24165b892642a7205fb006bf99deef5
     },
     password: {
         type: String,
@@ -17,6 +21,7 @@ const userSchema = new Schema({
     },
     image: {
         type: String,
+<<<<<<< HEAD
         default: ""
     },
     phone: {
@@ -26,6 +31,16 @@ const userSchema = new Schema({
     }
 }, {
     timestamps: true
+=======
+        required: true
+    },
+    phone: {
+        type: String,
+        required: true
+    }
+}, {
+    timestamps: true // ⚠️ corrigido aqui
+>>>>>>> 18a5ebb6c24165b892642a7205fb006bf99deef5
 })
 
 const User = mongoose.model('User', userSchema)

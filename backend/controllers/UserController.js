@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const User = require("../models/User")
 const bcrypt = require("bcrypt")
 const createUserToken = require("../helpers/create-user-token")
@@ -81,5 +82,10 @@ module.exports = class UserController {
         } catch (err) {
             res.status(500).json({ message: "Erro ao verificar usuário!" })
         }
+=======
+module.exports = class UserController {
+    static async register(req, res) {
+        res.json('Olá Get Pet')
+>>>>>>> 18a5ebb6c24165b892642a7205fb006bf99deef5
     }
 }
